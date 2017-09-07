@@ -1,5 +1,6 @@
 package org.spectrumbdd.expectations;
 
+@FunctionalInterface
 public interface Matcher<T> {
 
   class Result {

@@ -16,7 +16,7 @@ public class MatcherSpecs {
 
       describe("when specifying a class", () -> {
 
-        Matcher<Block> matcher = Matchers.throwException(DummyException.class);
+        Matcher<Block> matcher = Matchers.raise(DummyException.class);
 
         it("fails when no exception is thrown", () -> {
           Result result = matcher.match(() -> {

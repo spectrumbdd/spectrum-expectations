@@ -4,7 +4,7 @@ import org.spectrumbdd.expectations.matchers.throwable.ThrowExceptionMatcher;
 
 public interface Matchers {
 
-  static Matcher<Block> throwException(Class<? extends Throwable> expectedType) {
+  static Matcher<Block> raise(Class<? extends Throwable> expectedType) {
     return new ThrowExceptionMatcher(expectedType);
   }
 }
